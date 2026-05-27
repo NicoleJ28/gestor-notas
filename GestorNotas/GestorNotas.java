@@ -16,9 +16,18 @@ public class GestorNotas {
         System.out.println("Nota creada con id: " + id);
     }
 
-    // TODO: implementar listado
     public void listarNotas() {
-        // implementar en la fase correspondiente
+        if (notas.isEmpty()) {
+            System.out.println("No hay notas.");
+        } else {
+            for (Nota nota : notas) {
+                System.out.println("ID: " + nota.getId());
+                System.out.println("Título: " + nota.getTitulo());
+                System.out.println("Contenido: " + nota.getContenido());
+                System.out.println("Importancia: " + (nota.isImportante() ? "Importante" : "Normal"));
+                System.out.println("---");
+            }
+        }
     }
 
     // TODO: implementar filtro
