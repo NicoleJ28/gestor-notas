@@ -27,6 +27,18 @@ public class Nota {
         return importante;
     }
 
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setContenido(String contenido) {
+        this.contenido = contenido;
+    }
+
+    public void setImportante(boolean importante) {
+        this.importante = importante;
+    }
+
     @Override
     public String toString() {
         return "Nota{" +
