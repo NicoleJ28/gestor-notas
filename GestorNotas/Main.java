@@ -44,7 +44,7 @@ public class Main {
                     gestor.crearNota(titulo, contenido, importante);
                     break;
                 case "2":
-                    // TODO: implementar
+                    gestor.listarNotas();
                     break;
                 case "3":
                     // TODO: implementar
