@@ -30,8 +30,19 @@ public class GestorNotas {
         }
     }
 
-    // TODO: implementar filtro
     public void listarImportantes() {
-        // implementar en la fase correspondiente
+        boolean hayImportantes = false;
+        for (Nota nota : notas) {
+            if (nota.isImportante()) {
+                System.out.println("ID: " + nota.getId());
+                System.out.println("Título: " + nota.getTitulo());
+                System.out.println("Contenido: " + nota.getContenido());
+                System.out.println("---");
+                hayImportantes = true;
+            }
+        }
+        if (!hayImportantes) {
+            System.out.println("No hay notas importantes.");
+        }
     }
 }
